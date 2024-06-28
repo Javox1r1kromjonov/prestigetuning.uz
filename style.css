@@ -1,0 +1,1922 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    font-family: Montserrat;
+}
+
+.res_navbar
+{
+    display: none;
+}
+
+button 
+{
+    cursor: pointer;
+}
+
+
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+
+/* ============CAROUSEL================= */
+
+.main-carousel
+{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid black; */
+    padding: 20px 10px;
+    overflow: hidden;
+}
+
+.main-carousel .flickity-viewport
+{
+    overflow: visible;
+}
+
+.carousel-cell
+{
+    margin-right: 20px;
+}
+.flickity-enabled.is-draggable .flickity-viewport 
+{
+    cursor: auto;
+}
+.flickity-prev-next-button
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 5px black;
+}
+/* =============CONTAINER===================== */
+.container
+{
+    max-width: 1440px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    border: 1px solid transparent;
+    overflow: hidden;
+}
+/*================ HEADER =================*/
+.header 
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    background-color: white;
+    border-bottom: 1px solid #E3E3E8;
+    /* border: 1px solid black; */
+}
+.header .logo
+{
+    width: 210px;
+}
+.header .header_search 
+{
+    width: 400px;
+    padding: 15px 50px 15px 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: #DEDEE2;
+    /* margin-left: -80px; */
+    margin-top: 4px;
+}
+.header .header_search:focus 
+{
+    border: 1px solid #FF0000;
+    box-shadow: 0 0 10px #DEDEE2;
+}
+.header .header_search::placeholder 
+{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.header .search_icon 
+{
+    font-size: 20px;
+    position: relative;
+    left: -40px;
+    top: 2px;
+    color: #FF0000;
+
+}
+.header .phone a 
+{
+    color: #FF0000;
+    margin-left: 8px;
+    line-height: 50px;
+}
+.header .phone a:nth-child(even) 
+{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: left;
+    color: #1B1D1F;
+}
+/* ========== HEADER NAVBAR ============= */
+.header_nav 
+{
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background-color: white;
+    box-shadow: 0 10px 18px rgba(128, 128, 128, 0.151);
+}
+.header_nav .katalog 
+{
+    /* width: 100px; */
+    background-color: #FF0000;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: transparent;
+    border-radius: 10px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+}
+.header_nav .katalog:hover 
+{
+    box-shadow: 0 0 10px #ad0000; 
+}
+.header_nav .katalog:active 
+{
+    background-color: #ad0000; 
+}
+.header_nav .katalog img 
+{
+    margin-right: 10px;
+}
+.header_nav ul 
+{
+    width: 50%;
+    height: auto;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-around;
+}
+.header_nav ul li a 
+{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    color: #1B1D1F;
+    padding: 10px 15px;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    display: block;
+}
+.header_nav ul li a:hover 
+{
+    background-color: #F4F5F6;
+}
+.header_nav .korzinka 
+{
+    width: 140px;
+    padding: 15px 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #1B1D1F;
+}
+.header_nav .korzinka .fa-cart-shopping 
+{
+    font-size: 16px;
+    margin-top: 5px;
+    color: #FF0000;
+}
+.header_nav .korzinka:hover 
+{
+    background-color: #F4F5F6;
+}
+.header_nav .korzinka .notification 
+{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #FB6019;
+    color: white;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: center;
+    margin-top: 3px;
+}
+/* ======HEADER CAROUSEL========== */
+
+ .carousel 
+ {
+    width: 100%;
+    padding: 30px 50px;
+    box-sizing: border-box;
+ }
+ .carousel .header_carousel
+{
+    width: 99.5%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.carousel .flickity-page-dots {
+    width: 20%;
+    bottom: 80px;
+    left: 70px;
+    /* border: 1px solid white; */
+}
+.carousel .flickity-page-dots .dot 
+{
+    width: 60px;
+    height: 4px;
+    background-color:#D9D9D9;
+    border-radius: 10px !important;
+} 
+.carousel .header_carousel .info 
+{
+    width: 48%;
+    padding-left: 60px;
+    box-sizing: border-box;
+}
+.carousel .header_carousel .info h1
+{
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 55px;
+    text-align: left;
+    margin-top: 25%;
+    color: white;
+}
+.carousel .header_carousel .info h1 span 
+{
+    background-color: red;
+    padding: 2px 8px;
+    border-radius: 15px;
+}
+.carousel .header_carousel .info p 
+{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: left;
+    margin-top: 30px;
+    color: white;
+
+}
+.carousel .header_carousel img 
+{
+    width: 540px;
+    height: 480px;
+    align-self: center;
+}
+/* ==============PRODUCT=============== */
+.product 
+{
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.product .card 
+{
+    width: 320px;
+    height: auto;
+    border: 1px solid #E8E3E3;
+    padding: 20px 45px;
+    display: flex;
+    margin-top: 8px;
+    background-color: white;
+    /* box-sizing: border-box; */
+}
+.product .card:hover 
+{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #505255;
+    border-radius: 10px;
+    color: red;
+}
+.product .card:hover .card_info h3 
+{
+    color: red;
+}
+.product .card .card_info
+{
+    margin-left: 30px;
+}
+.product .card .card_info h3 
+{
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #1B1D1F;
+} 
+.product .card .card_info h6 
+{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #505255;
+}
+/* ========== POPULAR PRODUCT =========== */
+
+
+
+.popular_product
+{
+    width: 100%;
+    padding: 20px 50px;
+    box-sizing: border-box;
+}
+.popular_product_header
+{
+    display: flex;
+    justify-content: space-between;
+}
+.popular_product_header h1 
+{
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34px;
+}
+.popular_product_header .popular_product_all
+{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    padding: 4px 10px;
+    border-radius: 10px;
+}
+.popular_product_header .popular_product_all .fa-arrow-right
+{
+    color: red;
+    margin-left: 8px;
+}
+.popular_product_header .popular_product_all:hover 
+{
+    background-color: #F4F5F6;
+}
+.popular_product_box
+{
+    width: 100%;
+    margin-top: 50px;
+}
+
+.popular_product_box .carousel-cell:first-child .card
+{
+    width: 300px;
+    height: 380px;
+    background-color: black;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 0;
+}
+.popular_product_box .carousel-cell:first-child .card h2 
+{
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.26px;
+    margin-left: 30px;
+    margin-top: 30px;
+    color: white;
+}
+.popular_product_box .carousel-cell:first-child .card .fara 
+{
+    width: 250px;
+    height: 340px;
+    position: relative;
+    top: 0;
+    left: 10px;
+    z-index: 3;
+}
+.popular_product_box .carousel-cell:first-child .card .mask
+{
+    width: 300px;
+    height: 410px;
+    position: relative;
+    top: -460px;
+}
+.popular_product_box .card 
+{
+    width: 300px;
+    height: 380px;
+    border-radius: 10px;
+    border: 1px solid #DEDEE2;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    background-color: white;
+}
+.popular_product_box .card:hover 
+{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #505255;
+}
+
+.popular_product_box .card img 
+{
+    width: 240px;
+    height: 220px;
+}
+.popular_product_box .card h2 
+{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #1B1D1F;
+    margin-top: 20px;
+}
+.popular_product_box .card_footer 
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.popular_product_box .card_footer h1 
+{
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 30px;
+    color:#1B1D1F;
+    ;
+}
+
+.popular_product_box .card_footer h3 
+{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #7A7680;
+    text-decoration: line-through;
+}
+.popular_product_box .card_footer button 
+{
+    padding: 2px 8px;
+    border-radius: 5px;
+    border: 1px solid #FF0000;
+    color: #FF0000;
+    background-color: white;
+}
+.popular_product_box .card_footer button:hover 
+{
+    background-color: #FF0000;
+    color: white;
+}
+.popular_product_box2
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.popular_product_box2 .card 
+{
+    background: url(images/popular_img5_mask2.png) no-repeat center / cover;
+    background-color: #E8EDFA;
+    border: 1px solid #DEDEE2;
+    padding: 10px 20px;
+}
+.popular_product_box2 .card:hover 
+{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #505255;
+    border-radius: 10px;
+}
+.popular_product_box2 .card h2 
+{
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    color: #1B1D1F;
+}
+.popular_product_box2 .card a 
+{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    color: white;
+    background-color: #FF0000;
+    border: 1px solid #FF0000;
+    padding: 6px 14px;
+    border-radius: 8px;
+    float: left;
+    margin-top: 20%;
+}
+.popular_product_box2 .card a:hover 
+{
+    box-shadow: 0 0 10px #ad0000; 
+    /* color: red;
+    background-color: white; */
+}
+.popular_product_box2 .card a .fa-arrow-right 
+{
+    margin-left: 10px;
+}
+.popular_product_box2 .card img 
+{
+    width: 242px;
+    height: 185px;
+}
+
+/* =========RECOMMEND========= */
+/* AND */
+/* ===========NEW PRODUCT-============ */
+
+.recommend, .new_product
+{
+    width: 100%;
+    padding: 20px 50px;
+    box-sizing: border-box;
+}
+.recommend h1 , .new_product h1
+{
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34px;
+    color: #1B1D1F;
+}
+.recommend_body , .new_product_body
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.recommend_body .recommend_card, .new_product_body .new_product_card 
+{
+    width: 300px;
+    height: 380px;
+    border-radius: 10px;
+    border: 1px solid #DEDEE2;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    background-color: white;
+}
+.recommend_body .recommend_card:hover, .new_product_body .new_product_card:hover 
+{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #505255;
+}
+.recommend_body .recommend_card img, .new_product_body .new_product_card img
+{
+    width: 240px;
+    height: 220px;
+}
+.recommend_body .recommend_card h2, .new_product_body .new_product_card h2
+{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #1B1D1F;
+    margin-top: 20px;
+}
+.recommend_body .recommend_card .card_footer, .new_product_body .new_product_card .card_footer 
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.recommend_body .recommend_card .card_footer h1, .new_product_body .new_product_card .card_footer h1 
+{
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 30px;
+    color:#1B1D1F;
+}
+.recommend_body .recommend_card .card_footer h3, .new_product_body .new_product_card .card_footer h3
+{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #7A7680;
+    text-decoration: line-through;
+}
+.recommend_body .recommend_card .card_footer button , .new_product_body .new_product_card .card_footer button
+{
+    padding: 2px 8px;
+    border-radius: 5px;
+    border: 1px solid #FF0000;
+    color: #FF0000;
+    background-color: white;
+    transition: all 0.8s;
+} 
+.recommend .recommend_card .card_footer button:hover , .new_product_body .new_product_card .card_footer button:hover
+{
+    background-color: #FF0000;
+    color: white;
+}
+
+
+/* <!-- ==========ABOUT================= --> */
+
+.about 
+{
+    width: 100%;
+    padding: 30px 50px;
+    box-sizing: border-box;
+
+}
+.about h1 
+{
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34px;
+}
+.about .about_body
+{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+.about_body .about_info
+{
+    width: 40%;
+}
+.about_body .about_info p 
+{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #1B1D1F;
+}
+.about_body .about_info ul li strong:first-child 
+{
+    font-size: 30px;
+    position: relative;
+    top: -2px;
+
+}
+.about_body .about_info button 
+{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    color: white;
+    margin-top: 20px;
+    padding: 8px 35px;
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 6px;
+}
+.about_body .about_info button:hover 
+{
+    box-shadow: 0 0 10px #ad0000; 
+}
+.about_body .about_images
+{
+    width: 40%;
+}
+.about_body .about_images img
+{
+    width: 100%;
+}
+
+
+
+
+/* ==========LOCATION========== */
+
+
+.location 
+{
+    width: 100%;
+    padding: 30px 50px;
+    box-sizing: border-box;
+}
+.location_body 
+{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.location h1 
+{
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34px;
+}
+.location .map 
+{
+    width: 41%;
+}
+.location .map p 
+{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #1B1D1F;
+}
+.location .map iframe 
+{
+    margin-top: 20px;
+    width: 100%;
+    height: 250px;
+    border: 1px solid #E3E3E8;
+}
+.connection
+{
+    width: 41%;
+    /* border: 1px solid black; */
+}
+.connection .card 
+{
+    width: 100%;
+    height: 90%;
+    margin-top: 4%;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    border: 1px solid #E3E3E8;
+
+}
+.connection .card_header 
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.connection .card h2 
+{
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    color: #1B1D1F;
+}
+.connection .card button 
+{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #E3E3E8;
+    border: 1px solid #E3E3E8;
+}
+.connection .card input 
+{
+    font-family: Montserrat;
+    width: 100%;
+    border-radius: 6px;
+    padding: 14px 20px;
+    box-sizing: border-box;
+    border: 1px solid #DEDEE2;
+    margin-top: 15px;
+}
+.connection .card input:last-child 
+{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    color: white;
+    background-color: red;
+    cursor: pointer;
+}
+
+/* =============FOOTER=========== */
+
+.footer 
+{
+    width: 100%;
+    padding: 10px 50px;
+    box-sizing: border-box;
+    background-color: #000000;
+}
+.footer_body 
+{
+
+    padding-bottom: 20px;
+    border-bottom: 1px solid #FFFFFF;
+}
+.footer_body img 
+{
+    margin-bottom: -30px;
+}
+.footer_body a 
+{
+    color: white;
+    margin-left: 10px;
+    text-align: center;
+    transition: all 1s;
+    font-size: 40px;
+}
+.footer_body a:hover 
+{
+    transform: scale(1.1);
+    text-shadow:  0 0 10px white;
+}
+.footer h5 
+{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    padding: 10px 0;
+}
+
+/*home page FINISHED*/
+
+/* ======================================================= */
+
+/* ======================================================= */
+
+/* KATALOG PAGE STARTED */
+
+
+.katalog_page
+{
+    max-width: 1440px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background-color: #F8F8FA;
+    /* border: 1px solid black; */
+}
+
+.katalog_body 
+{
+    width: 100%;
+    padding: 30px 50px;
+    box-sizing: border-box;
+}
+
+.katalog_flex
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.katalog_body h1 
+{
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34px;
+    text-align: left;
+}
+
+.katalog_body .filter 
+{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 8px;
+    margin: auto;
+    margin-top: 20px;
+    display: none;
+}
+
+.katalog_body .filter button 
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #DEDEE2;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.katalog_body .filter button h2 
+{
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 34px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+
+.katalog_filter ,
+.katalog_filter_active
+{
+    width: 300px;
+    height: 1100px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid #E3E3E8;
+}
+
+.katalog_filter .kategoriya ,
+.katalog_filter_active, .kategoriya
+{
+    width: 100%;
+    border-bottom: 1px solid #E3E3E8;
+    border-top: 1px solid #E3E3E8;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.katalog_filter .search ,
+.katalog_filter_active .search
+{
+    width: 80%;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    border-radius: 5px;
+    padding: 10px;
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    color: #7A7680;
+    border: 1px solid #DEDEE2;
+
+}
+
+.katalog_filter .kategoriya h1 ,
+.katalog_filter_active .kategoriya h1
+{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: left;
+    color: #1B1D1F;
+}
+
+.katalog_filter .kategoriya ul ,
+.katalog_filter_active .kategoriya ul
+{
+    overflow: auto;
+    margin-top: 10px;
+}
+
+.katalog_filter .kategoriya ul li label ,
+.katalog_filter_active .kategoriya ul li label
+{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    /* line-height: 20px; */
+    text-align: left;
+    margin-left: 5px;
+    color: #1B1D1F;
+
+}
+.katalog_filter .kategoriya ul li input,
+.katalog_filter_active .kategoriya ul li input
+{
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    border: 1px solid #DEDEE2;
+    margin-top: 5px;
+}
+.katalog_filter .kategoriya a ,
+.katalog_filter_active .kategoriya a
+{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: #5946D7;
+    display: block;
+    margin-top: 20px;
+}
+.katalog_filter .summa .inputs,
+.katalog_filter_active .summa .inputs
+{
+    width: 100%;
+    display: flex;
+    margin-top: 15px;
+}
+.katalog_filter .summa input,
+.katalog_filter_active .summa input
+{
+    width: 50%;
+    border: 1px solid #DEDEE2;
+    padding: 8px 10px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.katalog_filter .filter2,
+.katalog_filter_active .filter2
+{
+    display: block;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.katalog_filter .filter2 input ,
+.katalog_filter_active .filter2 input
+{
+    width: 100%;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    color: white;
+    background-color: red;
+    border: 1px solid red;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.katalog_filter .filter2 input:last-child,
+.katalog_filter_active .filter2 input:last-child
+{
+    color: #92979E;
+    background-color: #F4F5F6;
+    border: 1px solid #F4F5F6;
+}
+.katalog_filter .filter input:hover ,
+.katalog_filter_active .filter input:hover
+{
+    transform: scale(1.04);
+}
+
+.katalog_info
+{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.katalog_info .card 
+{
+    width: 300px;
+    height: 380px;
+    border-radius: 10px;
+    border: 1px solid #DEDEE2;
+    padding: 30px 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    background-color: white;
+}
+.katalog_info .card:hover 
+{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #505255;
+}
+.katalog_info .card img 
+{
+    width: 240px;
+    height: 220px;
+}
+.katalog_info .card h2 
+{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #1B1D1F;
+    margin-top: 20px;
+}
+.katalog_info .card_footer 
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.katalog_info .card_footer h1 
+{
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 30px;
+    color:#1B1D1F;
+}
+.katalog_info .card_footer h3 
+{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #7A7680;
+    text-decoration: line-through;
+}
+.katalog_info .card_footer .katalog_card_btn2 
+{
+    display: none;
+}
+.katalog_info .card_footer button 
+{
+    padding: 2px 8px;
+    border-radius: 5px;
+    border: 1px solid #FF0000;
+    color: #FF0000;
+    background-color: white;
+    transition: all 0.8s;
+}
+.katalog_info button:hover
+{
+    background-color: #FF0000;
+    color: white;
+}
+.katalog_page .pagination 
+{
+    width: 330px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.katalog_page .pagination li a
+{
+    background-color: white;
+    border: 1px solid #DEDEE2;
+    border-radius: 8px;
+    color: #7A7680;
+    padding: 8px 14px;
+}
+.katalog_page .pagination li a:hover 
+{
+    color: white;
+    background-color: #410F9E;
+}
+
+
+/* ======KATALOG FINISHED===== */
+
+/* ==============================================
+==============================================
+============================================== */
+
+/*============== KORZINKA STARTED============ */
+
+.korzinka_page 
+{
+    max-width: 1440px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background-color: #F8F8FA;
+}
+.korzinka_page .header_nav .korzinka 
+{
+    width: 65px;
+    font-size: 20px;
+}
+
+.korzinka_body
+{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 30px 50px;
+}
+.korzinka_body h1 
+{
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34px;
+    color: #1B1D1F;
+}
+
+.korinzka_product
+{
+    width: 940px;
+    border: 1px solid #E3E3E8;
+    background-color: white;
+}
+
+.korzinka_product_header
+{
+    width: 100%;
+    border-bottom: 1px solid #E3E3E8;
+    padding:20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.korzinka_product_header h2 
+{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #1B1D1F;
+}
+
+.korzinka_product_header a
+{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #F11A22;
+}
+
+.korzinka_flex
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.productes 
+{
+    width: 100%;
+    height: 362px;
+    overflow: auto;
+}
+
+.productes_box 
+{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #E3E3E8;
+}
+
+.productes_info 
+{
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+.productes_info img
+{
+  margin-right: 30px;
+  margin-left: 20px;
+}
+.productes_info h4 
+{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #1B1D1F;
+}
+
+.productes_info h3 
+{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #1B1D1F;
+}
+
+.productes_box h4 
+{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #1B1D1F;
+}
+
+.productes_box .count .count_box
+{
+    width: 120px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 60px;
+    border: 1px solid #F1F2F4;
+    background-color: #F1F2F4;
+    padding: 4px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.productes_box .count .count_box button 
+{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    color: #7A7680;
+    border-radius: 50%;
+}
+
+.productes_box .count .count_box h6
+{
+font-family: Montserrat;
+font-size: 18px;
+font-weight: 400;
+line-height: 22px;
+text-align: center;
+}
+
+.count p
+{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+    color: #7A7680;    
+}
+
+.productes_box h5 
+{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #1B1D1F;
+}
+
+.productes_box button 
+{
+    border: none;
+    background: none;
+    color: #92979E;
+    font-size: 20px;
+}
+.productes_box button:hover 
+{
+    color: red;
+}
+
+.korzinka_zakaz
+{
+    width: 300px;
+    height: 280px;
+    background-color: white;
+    border: 1px solid #F4F5F6;
+    border-radius: 6px;
+    box-shadow: 0 0 5px black;
+}
+
+.korzinka_zakaz h2 
+{
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #1B1D1F;
+    margin: 20px;
+}
+
+.zakaz_productes, .zakaz_all
+{
+    padding: 20px;
+    border-top: 1px solid #E3E3E8;
+    border-bottom: 1px solid #E3E3E8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.zakaz_productes h1, .zakaz_all h1 
+{
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #1B1D1F;
+}
+
+.zakaz_productes h4, .zakaz_all h4 
+{
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #1B1D1F;
+} 
+
+.korzinka_zakaz a 
+{
+    width: 260px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    color: white;
+    background-color: red;
+    border: 1px solid red;
+    padding: 10px 50px;
+    box-sizing: border-box;
+    display: block;
+    margin: 10px auto;
+    border-radius: 6px;
+}
+
+.korzinka_zakaz a:hover 
+{
+    box-shadow: 0 0 10px red;
+}
+
+
+/* ===========KORZINKA FINISHED======================== */
+/* ======================================================= */
+/* =======================================================
+======================================================= */
+/*=================== DASTAVKA STARTED========= */
+
+.dastavka_page 
+{
+    max-width: 1440px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 30px 50px;
+    box-sizing: border-box;
+    background-color: #F8F8FA;
+}
+
+.dastavka_page h1 
+{
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34px;
+    color: #1B1D1F;
+}
+
+
+.dastavka_body
+{
+    width: 900px;
+}
+
+.dastavka_variant 
+{
+    width: 100%;
+    background-color: white;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    box-shadow: 0 0 6px #92979E;
+    border-radius: 6px;
+}
+
+.dastavka_variant ul 
+{
+    width: 335px;
+    height: 50px;
+    background-color: #E3E3E8;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.dastavka_variant ul li a ,
+.dastavka_page2 .dastavka_variant ul li:nth-child(2) a
+{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    padding: 10px 30px;
+    background-color: #2D2D2D;
+    color: white;
+    border-radius: 6px;
+    border: 1px solid black;
+}
+
+.dastavka_variant ul li:nth-child(2) a, .dastavka_page2 .dastavka_variant ul li:nth-child(1) a
+{
+    color: #55556D;
+    background: none ;
+    border: none;
+}
+
+.dastavka_variant ul li a:hover 
+{
+    border: 1px solid black;
+}
+
+.dastavka_body .zakaz 
+{
+    width: 100%;
+    background-color: white;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    box-shadow: 0 0 6px #92979E;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dastavka_body .zakaz form h2
+{
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #1B1D1F;
+}
+
+.dastavka_body .zakaz form input 
+{
+    width: 400px;
+    height: 48px;
+    border: 1px solid #DEDEE2;
+    border-radius: 6px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-top: 15px;
+}
+
+.dastavka_body .zakaz form input:nth-child(10), .dastavka_body .zakaz form input:nth-child(11)
+{
+    width: 200px;
+}
+
+.dastavka_body .zakaz form .submit
+{
+    width: 250px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+.dastavka_body .zakaz form input:hover 
+{
+    box-shadow: 0 0 5px red;
+}
+
+.dastavka_body .zakaz .korzinka_zakaz
+{
+    width: 400px;
+    box-shadow: 0 0 0;
+    border: none;
+}
+
+
+.dastavka_page2 .zakaz .korzinka_zakaz
+{
+    /* border: 2px solid red; */
+    margin-left: -200px;
+}
+
+
+.dastavka_flex
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.dastavka_flex .zakaz2 
+{
+    width: 320px;
+    height: 541px;
+    background-color: white;
+    border: 1px solid #F4F5F6;
+    border-radius: 6px;
+    box-shadow: 0 0 5px #2D2D2D;
+}
+
+.dastavka_flex .zakaz2 h1 
+{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: left;
+    color: #1B1D1F;
+    margin: 20px;
+}
+
+.dastavka_flex .zakaz2 .card 
+{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    border-top: 1px solid #E3E3E8;
+}
+
+.dastavka_flex .zakaz2 .card p 
+{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #7A7680;
+}
+
+.dastavka_flex .zakaz2 .card h2 
+{
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #1B1D1F;
+    margin-bottom: 10px;
+}
+
+.dastavka_flex .zakaz2 .card a 
+{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #1B1D1F;
+}
+
+.dastavka_flex .zakaz2 .card a:nth-child(2),.dastavka_flex .zakaz2  .card a:nth-child(5)
+{
+    color: red;
+}
+
+.dastavka_page2 .location 
+{
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 150px;
+    /* border: 1px solid black; */
+    padding: 0;
+}
+
+.dastavka_page2 .location_info 
+{
+    width: 300px;
+}
+.dastavka_page2 .location_info h1 
+{
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+    color:#1B1D1F;
+}
+
+.dastavka_page2 .location_info p 
+{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #1B1D1F;
+}
+.dastavka_page2 .location_info h3
+{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #7A7680;
+} 
+.dastavka_page2 .location_info h4
+{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #1B1D1F;
+}
+.dastavka_page2 .zakaz .location iframe
+{
+    width: 433px;
+    height: 180px;
+    border-radius: 6px;
+}
+
+
+.finish_page
+{
+    max-width: 1440px;
+    margin: auto;
+    background-color: #F9F9FB;
+}
+
+.finish_page h1 
+{
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34px;
+    color: #1B1D1F;
+    margin-top: 30px;
+}
+.finish_page .img 
+{
+    width: 150px;
+    height: 150px;
+}
+.finish_page p
+{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: center;
+}
+
+.finish_page .homelink 
+{
+    width: 130px;
+    background-color: #2D2D2D;
+    color: white;
+    border-radius: 6px;
+    padding: 10px 20px;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
