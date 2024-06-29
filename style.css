@@ -307,6 +307,7 @@ button
     padding: 20px 50px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
     box-sizing: border-box;
 }
@@ -317,6 +318,7 @@ button
     border: 1px solid #E8E3E3;
     padding: 20px 45px;
     display: flex;
+    margin: auto;
     margin-top: 8px;
     background-color: white;
     /* box-sizing: border-box; */
@@ -324,6 +326,7 @@ button
 .product .card:hover 
 {
     transform: scale(1.05);
+    transition: all 0.5s;
     box-shadow: 0 0 10px #505255;
     border-radius: 10px;
     color: red;
@@ -401,11 +404,12 @@ button
 .popular_product_box .carousel-cell:first-child .card
 {
     width: 300px;
-    height: 380px;
-    background-color: black;
+    height: auto;
     overflow: hidden;
     border-radius: 10px;
     padding: 0;
+    background-color: black;
+    background: url(images/popular_img1_mask.png) no-repeat center / cover;
 }
 .popular_product_box .carousel-cell:first-child .card h2 
 {
@@ -419,24 +423,19 @@ button
 }
 .popular_product_box .carousel-cell:first-child .card .fara 
 {
-    width: 250px;
-    height: 340px;
+    width: 200px;
+    height: 260px;
+    margin-top: 30px;
     position: relative;
-    top: 0;
-    left: 10px;
-    z-index: 3;
+    top: 30px;
+    right: -50px;
+    /* margin-bottom: -50px; */
 }
-.popular_product_box .carousel-cell:first-child .card .mask
-{
-    width: 300px;
-    height: 410px;
-    position: relative;
-    top: -460px;
-}
+
 .popular_product_box .card 
 {
     width: 300px;
-    height: 380px;
+    height: auto;
     border-radius: 10px;
     border: 1px solid #DEDEE2;
     padding: 30px 20px;
@@ -446,6 +445,7 @@ button
 .popular_product_box .card:hover 
 {
     transform: scale(1.05);
+    transition: all 0.5s;
     box-shadow: 0 0 10px #505255;
 }
 
@@ -476,7 +476,6 @@ button
     font-weight: 500;
     line-height: 30px;
     color:#1B1D1F;
-    ;
 }
 
 .popular_product_box .card_footer h3 
@@ -506,6 +505,7 @@ button
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 50px;
 }
 .popular_product_box2 .card 
@@ -514,10 +514,12 @@ button
     background-color: #E8EDFA;
     border: 1px solid #DEDEE2;
     padding: 10px 20px;
+    margin: auto;
 }
 .popular_product_box2 .card:hover 
 {
     transform: scale(1.05);
+    transition: all 0.5s;
     box-shadow: 0 0 10px #505255;
     border-radius: 10px;
 }
@@ -586,7 +588,7 @@ button
 .recommend_body .recommend_card, .new_product_body .new_product_card 
 {
     width: 300px;
-    height: 380px;
+    height: auto;
     border-radius: 10px;
     border: 1px solid #DEDEE2;
     padding: 30px 20px;
@@ -596,6 +598,7 @@ button
 .recommend_body .recommend_card:hover, .new_product_body .new_product_card:hover 
 {
     transform: scale(1.05);
+    transition: all 0.5s;
     box-shadow: 0 0 10px #505255;
 }
 .recommend_body .recommend_card img, .new_product_body .new_product_card img
@@ -1102,7 +1105,7 @@ button
 .katalog_info .card 
 {
     width: 300px;
-    height: 380px;
+    /* height: 380px; */
     border-radius: 10px;
     border: 1px solid #DEDEE2;
     padding: 30px 20px;
@@ -1113,6 +1116,7 @@ button
 .katalog_info .card:hover 
 {
     transform: scale(1.05);
+    transition: all 0.5s;
     box-shadow: 0 0 10px #505255;
 }
 .katalog_info .card img 
